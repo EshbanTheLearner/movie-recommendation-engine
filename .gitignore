@@ -1,4 +1,6 @@
 .jovianrc
 .vscode/
 .ipynb_checkpoints/
+data/
+model/
 *.csv
