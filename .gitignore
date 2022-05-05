@@ -1,0 +1,4 @@
+.jovianrc
+.vscode/
+.ipynb_checkpoints/
+*.csv
