@@ -25,7 +25,7 @@ st.header("Movie Recommendation Engine")
 movies = pickle.load(open("data/movies_dict.pkl", "rb"))
 similarity = pickle.load(open("model/similarity_matrix.pkl", "rb"))
 
-movie_list = movies["title"].values
+movie_list = sorted(movies["title"].values)
 selected_movie = st.selectbox(
     "Type or select a movie from the list", 
     movie_list
