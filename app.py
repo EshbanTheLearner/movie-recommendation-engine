@@ -21,6 +21,7 @@ def recommend(movie):
         recommended_movie_names.append(movies.iloc[movie[0]].title)
     return recommended_movie_names, recommended_movie_posters
 
+st.set_page_config(page_title="Movie Recommendation Engine", page_icon = "🤖", initial_sidebar_state = "auto")
 st.header("Movie Recommendation Engine")
 movies = pickle.load(open("data/movies_dict.pkl", "rb"))
 similarity = pickle.load(open("model/similarity_matrix.pkl", "rb"))
